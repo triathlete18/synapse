@@ -173,6 +173,10 @@
 				},
 				"nbformat": 4,
 				"nbformat_minor": 2,
+				"bigDataPool": {
+					"referenceName": "geronimo",
+					"type": "BigDataPoolReference"
+				},
 				"sessionProperties": {
 					"driverMemory": "28g",
 					"driverCores": 4,
@@ -183,7 +187,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "276494b8-c9c9-4f1c-8352-d97c59fbfa21"
+						"spark.autotune.trackingId": "40f81588-b246-485f-b860-b4f623055493"
 					}
 				},
 				"metadata": {
@@ -196,6 +200,21 @@
 					"language_info": {
 						"name": "python"
 					},
+					"a365ComputeOptions": {
+						"id": "/subscriptions/49ec6fac-1e1d-4705-8dc3-66dbadf720e3/resourceGroups/batman18/providers/Microsoft.Synapse/workspaces/avengers18/bigDataPools/geronimo",
+						"name": "geronimo",
+						"type": "Spark",
+						"endpoint": "https://avengers18.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/geronimo",
+						"auth": {
+							"type": "AAD",
+							"authResource": "https://dev.azuresynapse.net"
+						},
+						"sparkVersion": "3.1",
+						"nodeCount": 10,
+						"cores": 4,
+						"memory": 28,
+						"automaticScaleJobs": false
+					},
 					"sessionKeepAliveTimeout": 30
 				},
 				"cells": [
@@ -203,7 +222,7 @@
 						"cell_type": "code",
 						"metadata": {},
 						"source": [
-							"%run "
+							"%run Test_Magic_Command/Hello_World"
 						],
 						"outputs": [],
 						"execution_count": null
