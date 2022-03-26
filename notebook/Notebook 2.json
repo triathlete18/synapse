@@ -17,7 +17,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "bda6c9c3-bf06-4af4-a13e-90fc1436923d"
+				"spark.autotune.trackingId": "30f76e79-9c64-4bef-9714-275fd00f470e"
 			}
 		},
 		"metadata": {
@@ -53,7 +53,7 @@
 				"source": [
 					"print(\"Hello World\")"
 				],
-				"execution_count": 1
+				"execution_count": 2
 			}
 		]
 	}
