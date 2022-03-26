@@ -17,14 +17,11 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "e9ed3761-1175-4ae1-a53a-5a32e006ee64"
+				"spark.autotune.trackingId": "616c4750-3d0d-428c-89f0-d7fc466230c6"
 			}
 		},
 		"metadata": {
 			"saveOutput": true,
-			"synapse_widget": {
-				"version": "0.1"
-			},
 			"enableDebugMode": false,
 			"kernelspec": {
 				"name": "synapse_pyspark",
@@ -46,7 +43,7 @@
 				"nodeCount": 10,
 				"cores": 4,
 				"memory": 28,
-				"extraHeader": null
+				"automaticScaleJobs": false
 			},
 			"sessionKeepAliveTimeout": 30
 		},
@@ -54,11 +51,9 @@
 			{
 				"cell_type": "code",
 				"source": [
-					"%%pyspark\n",
-					"spark.sql(\"DROP DATABASE IF EXISTS mytestlakedb CASCADE\")"
+					"%run Notebook 2"
 				],
-				"attachments": null,
-				"execution_count": null
+				"execution_count": 3
 			}
 		]
 	}
