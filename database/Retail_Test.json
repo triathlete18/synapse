@@ -1,0 +1,28 @@
+{
+	"name": "Retail_Test",
+	"properties": {
+		"Name": "Retail_Test",
+		"EntityType": "DATABASE",
+		"Description": "",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Retail\",\"Version\":\"0.1.0\"}}}",
+			"IsSyMSCDMDatabase": true,
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate"
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://flash18@superman18.dfs.core.windows.net/Retail_Test",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "avengers18-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "0ccbddbf-c6c2-413f-8b14-632fc2498d1a"
+	},
+	"type": "DATABASE"
+}
